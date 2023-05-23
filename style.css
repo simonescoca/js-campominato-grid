@@ -2,8 +2,9 @@ header{
     background-image: url(img/bg.jpeg);
     background-size: 10%;
     position: relative;
-    height: 150px;
+    height: 180px;
     margin-bottom: 6rem;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .my_filter{
@@ -13,13 +14,15 @@ header{
     left: 0;
     background-color: rgba(255, 227, 227, 0.6);
     padding: 3rem 5%;
+    height: 180px;
 }
 
 h1{
     margin: 0;
     font-size: calc(2rem + 1.5vw);
-    padding: .5rem;
-    background-color: white;
+    padding: .5rem 1rem;
+    background-color: red;
+    color: white;
     border-radius: 10px;
 }
 
