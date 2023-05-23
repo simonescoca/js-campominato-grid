@@ -1,5 +1,42 @@
-*{
+header{
+    background-image: url(img/bg.jpeg);
+    background-size: 10%;
+    position: relative;
+    height: 150px;
+}
+
+.filter{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 227, 227, 0.6);
+    padding: 3rem 5%;
+}
+
+.title-background{
+    background-color: rgba(255, 141, 141, 0.6);
+}
+
+h1{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-size: calc(2rem + 1.5vw);
+    padding: .5rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#button{
+    width: 110px;
+    height: 60px;
+    font-size: 1.3rem;
+    background-color: red;
+    color: white;
+    transition: .5s;
+}
+
+#button:hover{
+    background-color: black;
+    color: red;
+    border: 2px solid red;
 }
