@@ -43,6 +43,7 @@ function generateGrid () {
             function () {
                 const selectCell = i + 1
                 console.log ("Cella selezionata: " + selectCell)
+                finalLiElement.classList.add ("cell-active")
             }
         )
     }
