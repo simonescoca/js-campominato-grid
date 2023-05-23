@@ -30,6 +30,10 @@ function createLiElement (index, liStyle, liToggleClass) {
     return liElement
 }
 
+/**
+ * Generates 100 lis in the ul, and resets them to 0 before
+ */
+
 function generateGrid () {
     while (ulElement.firstChild) {
         ulElement.removeChild (ulElement.firstChild);
