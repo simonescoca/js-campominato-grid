@@ -56,6 +56,22 @@ main{
     background-color: rgb(255, 0, 0);
 }
 
+.my_ul li:nth-child(1){
+    border-top-left-radius: 8px;
+}
+
+.my_ul li:nth-child(10){
+    border-top-right-radius: 8px;
+}
+
+.my_ul li:nth-child(91){
+    border-bottom-left-radius: 8px;
+}
+
+.my_ul li:nth-child(100){
+    border-bottom-right-radius: 8px;
+}
+
 .cell{
     width: 10%;
     height: 10%;
@@ -80,18 +96,33 @@ main{
     color: white;
 }
 
-#ul li:nth-child(1){
-    border-top-left-radius: 8px;
+@media screen and (max-width: 992px) {
+    .my_ul{
+        width: 400px;
+        height: 400px;
+        padding: .15rem;
+        margin: 0 0 3rem 0;
+        border: 1px solid rgb(255, 0, 0);
+        border-radius: 4px;
+    }
+
+    .cell{
+        line-height: 40px;
+        font-size: .8rem;
+    }
 }
 
-#ul li:nth-child(10){
-    border-top-right-radius: 8px;
-}
+@media screen and (max-width: 480px) {
+    .my_ul{
+        width: 300px;
+        height: 300px;
+        padding: .15rem;
+        margin: 0 0 2rem 0;
+        border-radius: 3px;
+    }
 
-#ul li:nth-child(91){
-    border-bottom-left-radius: 8px;
-}
-
-#ul li:nth-child(100){
-    border-bottom-right-radius: 8px;
+    .cell{
+        line-height: 30px;
+        font-size: .7rem;
+    }
 }
