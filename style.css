@@ -53,6 +53,8 @@ main{
     height: 800px;
     padding: 0;
     margin: 0 0 6rem 0;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
 }
 
 .cell{
@@ -62,4 +64,30 @@ main{
     list-style: none;
     text-align: center;
     line-height: 80px;
+}
+
+.cell:hover{
+    background-color: rgb(123, 213, 255);
+}
+
+.cell-active{
+    background-color: rgb(0, 136, 255);
+    color: white;
+    border-color: rgb(0, 89, 255);
+}
+
+#ul li:nth-child(1){
+    border-top-left-radius: 8px;
+}
+
+#ul li:nth-child(10){
+    border-top-right-radius: 8px;
+}
+
+#ul li:nth-child(91){
+    border-bottom-left-radius: 8px;
+}
+
+#ul li:nth-child(100){
+    border-bottom-right-radius: 8px;
 }
