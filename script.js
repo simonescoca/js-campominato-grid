@@ -35,9 +35,7 @@ function createLiElement (index, liStyle, liToggleClass) {
  */
 
 function generateGrid () {
-    while (ulElement.firstChild) {
-        ulElement.removeChild (ulElement.firstChild);
-    }
+    ulElement.innerHTML = ""
 
     for (let i = 0 ; i < 100 ; i++) {
         const finalLiElement = createLiElement ((i + 1), "cell", "selected")
