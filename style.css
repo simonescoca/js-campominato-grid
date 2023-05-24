@@ -8,11 +8,12 @@ body::-webkit-scrollbar{
 }
 
 header{
-    height: 180px;
     margin-bottom: 6rem;
     font-family: 'Permanent Marker', cursive;
     background-color: rgba(0, 0, 0, 0.75);
     padding: 3rem 5%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 h1{
@@ -112,6 +113,15 @@ main{
     }
 }
 
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .my_ul{
         width: 300px;
@@ -124,5 +134,11 @@ main{
     .cell{
         line-height: 30px;
         font-size: .7rem;
+    }
+
+    h1{
+        font-size: calc(1.5rem + 1.5vw);
+        padding: .2 .5rem;
+        border-radius: 6px;
     }
 }
